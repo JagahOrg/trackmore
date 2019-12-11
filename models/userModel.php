@@ -18,8 +18,36 @@
   		$this->conn=$db;
   		  	} 
 
+    public function userexists()
+     {
+            
+            $query= 'SELECT COUNT(*) FROM '.$this->table.' where email= :email ';
+
+            $stmt=$this->conn->prepare($query);
+
+            $this->email=htmlspecialchars(strip_tags($this->email));
+            $stmt->bindparam(':email', $this->email);
+
+            
+           
+            $stmt->execute();
+            $result=$stmt->fetchColumn();
+
+            if($result>0){
+              $userexists=true;
+
+            }
+            else{
+              $userexists=false;
+            }
+
+            return $userexists;    
+      } 
+          
+
     public function Register(){
        $query='INSERT INTO '.$this->table.'
+    
       SET
         firstname = :firstname,
         lastname= :lastname,
@@ -50,9 +78,43 @@
       
         printf("Error: %s.\n", $stmt->error);
     }
-    
+
+    public function login()
+     {
+            
+            $query= 'SELECT * FROM '.$this->table.' where email= :email ';
+
+            $stmt=$this->conn->prepare($query);
+
+            $this->email=htmlspecialchars(strip_tags($this->email));
+            $stmt->bindparam(':email', $this->email);
+
+            
+           
+            $stmt->execute();
+            $result=$stmt->fetchAll();
+
+
+            return $result;
+
+          
+      }
+
+            
+      
+
+
+
+
+
+
+
+
+
 
     }
+
+
 
   
  
