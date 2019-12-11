@@ -1,6 +1,11 @@
 <?php
-  include_once 'config/database.php';
-  include_once 'models/userModel.php';
+  //sub directories
+  @include_once '../../config/database.php';
+  @include_once '../../models/userModel.php';
+
+  //views
+   @include_once 'config/database.php';
+  @include_once 'models/userModel.php';
 
 
 

@@ -15,8 +15,8 @@
 
 
 
-// login
-  /* $email="davonkae1@gmail.com";
+//login
+  /* */$email="davonkae1@gmail.com";
    $password="davonjagah";
    
 
@@ -25,7 +25,7 @@
 
    $status=$newuser->login($email,$password);
    echo $status['message'];
-   */
+   /**/
 
 
 ?>
