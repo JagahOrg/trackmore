@@ -1,0 +1,77 @@
+form {
+  width: 90%;
+  margin: auto;
+  border: 2px dashed #F9B3D1;
+  margin-top: 27px;
+  text-align: center;
+  padding-top: 38px;
+  padding-bottom: 104px;
+}
+
+@media screen and (min-width: 1000px) {
+  form {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  form {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  form {
+    width: 50%;
+  }
+}
+
+form h3 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 49px;
+  margin-bottom: 25px;
+}
+
+form input {
+  width: 80% !important;
+  margin: auto;
+  border: 1px solid #F9B3D1 !important;
+  padding: 15px 18px !important;
+  color: #717171;
+  margin-top: 28px !important;
+}
+
+form div a {
+  display: inline-block;
+  background: #B33951;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  padding: 16px 75px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 24px;
+}
+
+form a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+footer {
+  margin-top: 38px;
+  text-align: center;
+}
+
+footer p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #F9B3D1;
+}
+/*# sourceMappingURL=login.css.map */

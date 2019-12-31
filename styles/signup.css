@@ -1,0 +1,137 @@
+footer {
+  margin-top: 38px;
+  text-align: center;
+}
+
+footer p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #F9B3D1;
+}
+
+.numbers {
+  margin-top: 28px;
+  text-align: center;
+}
+
+.numbers span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F9B3D1;
+  color: white;
+  border-radius: 50%;
+}
+
+.numbers .middle {
+  margin: 0 25px;
+}
+
+.numbers span:first-child {
+  background: #FF6473;
+}
+
+form {
+  width: 90%;
+  margin: auto;
+  border: 2px dashed #F9B3D1;
+  padding: 58px 76px 29px;
+  margin-top: 31px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+  form {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  form {
+    width: 60%;
+  }
+}
+
+form input {
+  border: 1px solid #F9B3D1 !important;
+  padding: 5px 0px 5px 10px !important;
+}
+
+form .top-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 54px;
+  margin-bottom: 21px;
+}
+
+form input {
+  border: 1px solid #C4C4C4;
+}
+
+form .check {
+  margin: 0;
+  margin-top: 22px;
+}
+
+form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+form div a {
+  display: inline-block;
+  background: #B33951;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 67px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 24px;
+}
+
+form a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+[type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
+  border: 2px solid #B33951;
+  border-radius: 50%;
+}
+
+[type="checkbox"].filled-in:checked + span:not(.lever):after {
+  background: #B33951 !important;
+  border-radius: 50%;
+  border: 1px solid #B33951;
+}
+
+label span {
+  text-transform: capitalize;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+/*# sourceMappingURL=signup.css.map */

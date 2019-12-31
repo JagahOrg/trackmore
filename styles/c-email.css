@@ -1,0 +1,84 @@
+footer {
+  margin-top: 38px;
+  text-align: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+footer p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #F9B3D1;
+}
+
+.numbers {
+  margin-top: 28px;
+  text-align: center;
+}
+
+.numbers span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F9B3D1;
+  color: white;
+  border-radius: 50%;
+}
+
+.numbers .middle {
+  margin: 0 25px;
+}
+
+.numbers span:first-child {
+  background: #FF6473;
+}
+
+.numbers .middle {
+  background: #FF6473;
+}
+
+section {
+  text-align: center;
+  margin-top: 81px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+section h5 {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+section input {
+  width: 30% !important;
+  margin-top: 35px !important;
+  margin-bottom: 52px !important;
+  text-align: center;
+  font-weight: 500;
+  color: #838383;
+}
+
+section a {
+  display: inline-block;
+  background: #B33951;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 67px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 24px;
+}
+/*# sourceMappingURL=c-email.css.map */

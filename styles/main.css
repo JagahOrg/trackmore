@@ -1,0 +1,399 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-wrapper {
+  background-color: white;
+}
+
+.nav-wrapper div {
+  width: 80%;
+  margin: auto;
+  max-width: 1700px;
+}
+
+.nav-wrapper div a {
+  color: black;
+}
+
+.nav-wrapper div .brand-logo {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.nav-wrapper div ul li a {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.nav-wrapper div ul li .get {
+  background: #B33951;
+  border-radius: 50px;
+  color: white;
+}
+
+.banner-wrapper {
+  width: 80%;
+  margin: auto;
+  max-width: 1700px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 65% 35%;
+      grid-template-columns: 65% 35%;
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 1170px) {
+  .banner-wrapper {
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .banner-wrapper {
+    -ms-grid-columns: 100% 0%;
+        grid-template-columns: 100% 0%;
+    width: 90%;
+  }
+}
+
+.banner-wrapper .banner-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner-wrapper .banner-text .text-content h3 {
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 55px;
+  margin: 0;
+}
+
+.banner-wrapper .banner-text .text-content p {
+  margin: 0px;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: #B33951;
+}
+
+.banner-wrapper .banner-text p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  max-width: 565px;
+  margin-top: 25px;
+}
+
+.banner-wrapper .banner-text .started a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: #B33951;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  padding: 18px 41px;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 30px;
+  margin: 25px 0px;
+}
+
+.banner-wrapper .banner-img {
+  width: 100%;
+}
+
+.banner-wrapper .banner-img img {
+  width: 100%;
+}
+
+.banner-wrapper .download-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+.banner-wrapper .download-wrapper .download:first-child {
+  margin-right: 20px;
+}
+
+.banner-wrapper .download-wrapper .download {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.banner-wrapper .download-wrapper .download .fab {
+  font-size: 2.5rem;
+  margin-right: 10px;
+}
+
+.banner-wrapper .download-wrapper .download a {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.banner-wrapper .download-wrapper .download div h6 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.banner-wrapper .download-wrapper .download div p {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+
+.track-wrapper {
+  width: 80%;
+  margin: auto;
+  max-width: 1700px;
+  text-align: center;
+}
+
+@media screen and (max-width: 993px) {
+  .track-wrapper {
+    width: 90%;
+  }
+}
+
+.track-wrapper h3 {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 2.7rem;
+  line-height: 55px;
+}
+
+.track-wrapper .track-contents {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-top: 93px;
+  margin-bottom: 51px;
+}
+
+@media screen and (max-width: 674px) {
+  .track-wrapper .track-contents {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.track-wrapper .track-contents .track-img div {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.track-wrapper .track-contents .track-img p {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 30px;
+  text-align: center;
+  max-width: 203px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.track-wrapper .track-contents .track-img p:last-child {
+  max-width: 239px;
+}
+
+.track-wrapper .track-contents .ti-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 674px) {
+  .track-wrapper .track-contents .ti-2 {
+    margin-top: 20px;
+  }
+}
+
+.secondary-wrapper {
+  background: #F7F7FF;
+  margin-bottom: 33px;
+}
+
+.secondary-wrapper .secondary-contents {
+  width: 80%;
+  margin: auto;
+  max-width: 1700px;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 48px 0px;
+}
+
+@media screen and (max-width: 993px) {
+  .secondary-wrapper .secondary-contents {
+    width: 90%;
+  }
+}
+
+.secondary-wrapper .secondary-contents h3 {
+  font-weight: 600;
+  font-size: 2.7em;
+  line-height: 55px;
+  text-align: center;
+  max-width: 747px;
+  margin: auto;
+  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 993px) {
+  .secondary-wrapper .secondary-contents h3 {
+    font-size: 2em;
+    line-height: 40px;
+  }
+}
+
+.secondary-wrapper .secondary-contents p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 24px;
+  max-width: 565px;
+  margin: auto;
+  margin-bottom: 24px;
+}
+
+.secondary-wrapper .secondary-contents a {
+  display: inline-block;
+  background: #B33951;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  padding: 18px 41px;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 30px;
+}
+
+.secondary-wrapper .secondary-contents .download-wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+.secondary-wrapper .secondary-contents .download-wrapper .download:first-child {
+  margin-right: 20px;
+}
+
+.secondary-wrapper .secondary-contents .download-wrapper .download {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.secondary-wrapper .secondary-contents .download-wrapper .download .fab {
+  font-size: 2.5rem;
+  margin-right: 10px;
+}
+
+.secondary-wrapper .secondary-contents .download-wrapper .download a {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.secondary-wrapper .secondary-contents .download-wrapper .download div h6 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.secondary-wrapper .secondary-contents .download-wrapper .download div p {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+
+.page-footer {
+  background: #F7F7FF;
+  color: black;
+  padding-top: 44px;
+  padding-bottom: 10px;
+}
+
+.page-footer .footer-contents {
+  width: 95%;
+  margin: auto;
+}
+
+.page-footer .footer-contents .row {
+  margin-bottom: 0;
+}
+
+.page-footer i {
+  font-size: 40px;
+  margin-right: 5px;
+  color: #3B5998;
+}
+
+.page-footer i:last-child {
+  margin-right: 0px;
+}
+/*# sourceMappingURL=main.css.map */
